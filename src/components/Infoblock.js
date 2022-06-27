@@ -1,6 +1,6 @@
 import React from "react";
 
-class Infoblock extends React.Component {
+class InfoBlock extends React.Component {
     render() {
         return (
             <h2 className="blocktitle">{ this.props.blocktitle }</h2>
@@ -8,4 +8,4 @@ class Infoblock extends React.Component {
     }
 }
 
-export default Infoblock;
+export default InfoBlock;

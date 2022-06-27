@@ -5,7 +5,7 @@ import CVPreview from "./components/CVPreview";
 class App extends React.Component {
   render() {
     return (
-      <div id="root">
+      <div id="body">
         <CVEdit className="CV-Edit" />
         <CVPreview className="CV-Preview" />
       </div>

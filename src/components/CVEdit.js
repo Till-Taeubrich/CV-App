@@ -8,6 +8,11 @@ class CVEdit extends React.Component {
             <form className="CVEdit">
                 <BlockTitle content='Personal Details' />
                 <InputField/>
+                <InputField/>
+                <InputField/>
+                <InputField/>
+                <InputField/>
+                <InputField/>
                 <BlockTitle content='Education' />
                 <BlockTitle content='Work Experience' />
             </form>

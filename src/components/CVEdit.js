@@ -6,20 +6,22 @@ import InputBlock from './InputBlock';
 class CVEdit extends React.Component {
     render() {
         return (
-            <form className="CVEdit">
-                <BlockTitle content='Personal Details' />
-                <InputField/>
-                <InputField/>
-                <InputField/>
-                <InputField/>
-                <InputField/>
-                <InputField/>
-                <BlockTitle content='Education' />
-                <InputBlock/>
-                <BlockTitle content='Work Experience' />
-                <InputBlock/>
-            </form>
-        )
+          <form className="CVEdit">
+            <BlockTitle content="Personal Details" />
+            <div className="input-block">
+              <InputField />
+              <InputField />
+              <InputField />
+              <InputField />
+              <InputField />
+              <InputField />
+            </div>
+            <BlockTitle content="Education" />
+            <InputBlock />
+            <BlockTitle content="Work Experience" />
+            <InputBlock />
+          </form>
+        );
     }
 }
 

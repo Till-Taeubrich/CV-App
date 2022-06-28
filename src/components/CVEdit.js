@@ -1,14 +1,16 @@
 import React from "react";
-import InfoBlock from "./InfoBlock";
+import BlockTitle from "./BlockTitle";
+import InputField from "./InputField";
 
 class CVEdit extends React.Component {
     render() {
         return (
-            <div className="CVEdit">
-                <InfoBlock blocktitle='Personal Details' />
-                <InfoBlock blocktitle='Education' />
-                <InfoBlock blocktitle='Work Experience' />
-            </div>
+            <form className="CVEdit">
+                <BlockTitle content='Personal Details' />
+                <InputField/>
+                <BlockTitle content='Education' />
+                <BlockTitle content='Work Experience' />
+            </form>
         )
     }
 }

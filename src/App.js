@@ -7,8 +7,8 @@ class App extends React.Component {
   render() {
     return (
       <div id="body">
-        <CVEdit className="CV-Edit" />
-        <CVPreview className="CV-Preview" />
+        <CVEdit />
+        <CVPreview />
       </div>
     )
   }

@@ -6,7 +6,7 @@ import InputBlock from './InputBlock';
 class CVEdit extends React.Component {
     render() {
         return (
-          <form className="CVEdit">
+          <form className="CV-Edit">
             <BlockTitle content="Personal Details" />
             <div className="input-block">
               <InputField />

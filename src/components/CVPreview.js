@@ -3,9 +3,7 @@ import React from "react";
 class CVPreview extends React.Component {
     render() {
         return (
-            <div className="CVPreview">
-                
-            </div>
+            <div>test</div>
         );
     }
 }

@@ -3,7 +3,11 @@ import React from "react";
 class InputField extends React.Component {
   render() {
     return (
-      <input className="input-field" placeholder={ this.props.content } />
+      <div>
+        <label htmlFor="input-field">
+          <input className="input-field" id="input-field" defaultValue={ this.props.defaultValue } placeholder={this.props.placeholder} />
+        </label>
+      </div>
     );
   }
 }

@@ -9,12 +9,15 @@ class CVEdit extends React.Component {
           <form className="CV-Edit">
             <BlockTitle content="Personal Details" />
             <div className="input-block">
-              <InputField content={this.props.name}/>
-              <InputField content={this.props.job}/>
-              <InputField content={this.props.telefon}/>
-              <InputField content={this.props.email}/>
-              <InputField content={this.props.location}/>
-              <InputField content={this.props.description}/>
+              <InputField
+                defaultValue={this.props.name}
+                placeholder='Name'
+              />
+              <InputField defaultValue={this.props.job} placeholder='Title' />
+              <InputField defaultValue={this.props.telefon} placeholder='Phone'/>
+              <InputField defaultValue={this.props.email} placeholder='Email' />
+              <InputField defaultValue={this.props.location} placeholder='Location' />
+              <InputField defaultValue={this.props.description} placeholder='Description...' />
             </div>
             <BlockTitle content="Education" />
             <InputBlock />

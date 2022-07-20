@@ -1,9 +1,16 @@
 import React from "react";
+import DisplayField from "./DisplayField";
+
+
 
 class CVPreview extends React.Component {
     render() {
         return (
-            <div>test</div>
+            <div className="CV-Preview">
+                <div className="header">
+                    <DisplayField content={this.props.name} />
+                </div>
+            </div>
         );
     }
 }

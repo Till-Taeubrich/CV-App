@@ -17,6 +17,10 @@ state = {
   // employmentFrom: '2018',
 }
 
+// const updateName = () => {
+
+// }
+
   render() {
     return (
       <div id="body">

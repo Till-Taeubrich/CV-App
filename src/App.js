@@ -17,9 +17,41 @@ state = {
   // employmentFrom: '2018',
 }
 
-// const updateName = () => {
+updateName = () => {
+  this.setState({
+    name: document.querySelector('#name').value,
+  })
+}
 
-// }
+updateJob = () => {
+  this.setState({
+    job: document.querySelector('#job').value,
+  })
+}
+
+updateTelefon = () => {
+  this.setState({
+    telefon: document.querySelector('#telefon').value,
+  })
+}
+
+updateEmail = () => {
+  this.setState({
+    email: document.querySelector('#email').value,
+  })
+}
+
+updateLocation = () => {
+  this.setState({
+    location: document.querySelector('#location').value,
+  })
+}
+
+updateDescription = () => {
+  this.setState({
+    description: document.querySelector('#description').value,
+  })
+}
 
   render() {
     return (
@@ -30,7 +62,14 @@ state = {
           telefon={this.state.telefon}
           email={this.state.email}
           location={this.state.location}
-          description={this.state.description}/>
+          description={this.state.description}
+          updateName={this.updateName}
+          updateJob={this.updateJob}
+          updateTelefon={this.updateTelefon}
+          updateEmail={this.updateEmail}
+          updateLocation={this.updateLocation}
+          updateDescription={this.updateDescription}
+          />
         <CVPreview 
           name={this.state.name}
           job={this.state.job}

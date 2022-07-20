@@ -10,14 +10,41 @@ class CVEdit extends React.Component {
             <BlockTitle content="Personal Details" />
             <div className="input-block">
               <InputField
+                id="name"
                 defaultValue={this.props.name}
-                placeholder='Name'
+                placeholder="Name"
+                handleUpdate={this.props.updateName}
               />
-              <InputField defaultValue={this.props.job} placeholder='Title' />
-              <InputField defaultValue={this.props.telefon} placeholder='Phone'/>
-              <InputField defaultValue={this.props.email} placeholder='Email' />
-              <InputField defaultValue={this.props.location} placeholder='Location' />
-              <InputField defaultValue={this.props.description} placeholder='Description...' />
+              <InputField
+                id="job"
+                defaultValue={this.props.job}
+                placeholder="Title"
+                handleUpdate={this.props.updateJob}
+              />
+              <InputField
+                id="telefon"
+                defaultValue={this.props.telefon}
+                placeholder="Phone"
+                handleUpdate={this.props.updateTelefon}
+              />
+              <InputField
+                id="email"
+                defaultValue={this.props.email}
+                placeholder="Email"
+                handleUpdate={this.props.updateEmail}
+              />
+              <InputField
+                id="location"
+                defaultValue={this.props.location}
+                placeholder="Location"
+                handleUpdate={this.props.updateLocation}
+              />
+              <InputField
+                id="description"
+                defaultValue={this.props.description}
+                placeholder="Description..."
+                handleUpdate={this.props.updateDescription}
+              />
             </div>
             <BlockTitle content="Education" />
             <InputBlock />

@@ -12,7 +12,8 @@ state = {
   email: 'doeman@gmail.com',
   location: 'Bristol, UK',
   description: 'Cupidatat sunt anim incididunt nisi labore sunt nulla Lorem elit irure. Aliquip quis excepteur et nostrud enim irure nostrud officia. Et deserunt et aliquip voluptate elit cupidatat. Adipisicing enim minim do anim eiusmod est. Irure laboris anim voluptate proident. Cillum reprehenderit est magna minim. Nostrud ex aute laborum ea irure amet ea ipsum ut non minim anim nisi.',
-  educationBlocks: [
+
+  experienceBlocks: [
     {
       company: 'A Software Company',
       position: 'Software Engineer',
@@ -40,16 +41,18 @@ handleInputChange = (e) => {
           location={this.state.location}
           description={this.state.description}
           handleInputChange={this.handleInputChange}
-          />
-        <CVPreview 
+          experienceBlocks={this.state.experienceBlocks}
+        />
+        <CVPreview
           name={this.state.name}
           job={this.state.job}
           telefon={this.state.telefon}
           email={this.state.email}
           location={this.state.location}
-          description={this.state.description}/>
+          description={this.state.description}
+        />
       </div>
-    )
+    );
   }
 }
 

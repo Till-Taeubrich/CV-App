@@ -1,10 +1,10 @@
 import React from "react";
 
-class InputField extends React.Component {
+class TextareaField extends React.Component {
   render() {
     return (
       <div>
-        <input
+        <textarea
           name={this.props.name}
           onChange={this.props.handleUpdate}
           className="input-field"
@@ -16,4 +16,4 @@ class InputField extends React.Component {
   }
 }
 
-export default InputField;
+export default TextareaField;

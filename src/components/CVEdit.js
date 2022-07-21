@@ -3,9 +3,11 @@ import BlockTitle from "./BlockTitle";
 import InputField from "./InputField";
 import EducationBlock from "./EducationBlock";
 import ExperienceBlock from "./ExperienceBlock";
+import TextareaField from "./TextareaField";
 
 class CVEdit extends React.Component {
     render() {
+      console.log(this.props.experienceBlocks[0].company);
         return (
           <form className="CV-Edit">
             <BlockTitle content="Personal Details" />
@@ -40,17 +42,17 @@ class CVEdit extends React.Component {
                 placeholder="Location"
                 handleUpdate={this.props.handleInputChange}
               />
-              <InputField
+              <TextareaField
                 name="description"
                 defaultValue={this.props.description}
                 placeholder="Description..."
                 handleUpdate={this.props.handleInputChange}
               />
             </div>
-            <BlockTitle content="Education" />
-            <EducationBlock/>
             <BlockTitle content="Work Experience" />
-            <ExperienceBlock />
+            <ExperienceBlock data={this.props.experienceBlocks}/>
+            <BlockTitle content="Education" />
+            <EducationBlock />
           </form>
         );
     }

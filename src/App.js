@@ -12,44 +12,20 @@ state = {
   email: 'doeman@gmail.com',
   location: 'Bristol, UK',
   description: 'Cupidatat sunt anim incididunt nisi labore sunt nulla Lorem elit irure. Aliquip quis excepteur et nostrud enim irure nostrud officia. Et deserunt et aliquip voluptate elit cupidatat. Adipisicing enim minim do anim eiusmod est. Irure laboris anim voluptate proident. Cillum reprehenderit est magna minim. Nostrud ex aute laborum ea irure amet ea ipsum ut non minim anim nisi.',
-  // company: 'A Software Company',
-  // position: 'Software Engineer',
-  // employmentFrom: '2018',
+  educationBlocks: [
+    {
+      company: 'A Software Company',
+      position: 'Software Engineer',
+      employmentFrom: '2018',
+      employmentTo: 'Present',
+      description: 'Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.'
+    },
+  ]
 }
 
-updateName = (e) => {
+handleInputChange = (e) => {
   this.setState({
-    name: e.target.value,
-  })
-}
-
-updateJob = (e) => {
-  this.setState({
-    job: e.target.value,
-  })
-}
-
-updateTelefon = (e) => {
-  this.setState({
-    telefon: e.target.value,
-  })
-}
-
-updateEmail = (e) => {
-  this.setState({
-    email: e.target.value,
-  })
-}
-
-updateLocation = (e) => {
-  this.setState({
-    location: e.target.value,
-  })
-}
-
-updateDescription = (e) => {
-  this.setState({
-    description: e.target.value,
+    [e.target.name]: e.target.value,
   })
 }
 
@@ -63,12 +39,7 @@ updateDescription = (e) => {
           email={this.state.email}
           location={this.state.location}
           description={this.state.description}
-          updateName={this.updateName}
-          updateJob={this.updateJob}
-          updateTelefon={this.updateTelefon}
-          updateEmail={this.updateEmail}
-          updateLocation={this.updateLocation}
-          updateDescription={this.updateDescription}
+          handleInputChange={this.handleInputChange}
           />
         <CVPreview 
           name={this.state.name}

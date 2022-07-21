@@ -10,40 +10,40 @@ class CVEdit extends React.Component {
             <BlockTitle content="Personal Details" />
             <div className="input-block">
               <InputField
-                id="name"
+                name="name"
                 defaultValue={this.props.name}
                 placeholder="Name"
-                handleUpdate={this.props.updateName}
+                handleUpdate={this.props.handleInputChange}
               />
               <InputField
-                id="job"
+                name="job"
                 defaultValue={this.props.job}
                 placeholder="Title"
-                handleUpdate={this.props.updateJob}
+                handleUpdate={this.props.handleInputChange}
               />
               <InputField
-                id="telefon"
+                name="telefon"
                 defaultValue={this.props.telefon}
                 placeholder="Phone"
-                handleUpdate={this.props.updateTelefon}
+                handleUpdate={this.props.handleInputChange}
               />
               <InputField
-                id="email"
+                name="email"
                 defaultValue={this.props.email}
                 placeholder="Email"
-                handleUpdate={this.props.updateEmail}
+                handleUpdate={this.props.handleInputChange}
               />
               <InputField
-                id="location"
+                name="location"
                 defaultValue={this.props.location}
                 placeholder="Location"
-                handleUpdate={this.props.updateLocation}
+                handleUpdate={this.props.handleInputChange}
               />
               <InputField
-                id="description"
+                name="description"
                 defaultValue={this.props.description}
                 placeholder="Description..."
-                handleUpdate={this.props.updateDescription}
+                handleUpdate={this.props.handleInputChange}
               />
             </div>
             <BlockTitle content="Education" />

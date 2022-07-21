@@ -21,6 +21,37 @@ state = {
       employmentTo: 'Present',
       description: 'Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.'
     },
+    {
+      company: 'My First Company',
+      position: 'Graduate Engineer',
+      employmentFrom: '2017',
+      employmentTo: '2018',
+      description: 'Irure dolor incididunt sint et ullamco. Commodo laboris amet aliquip incididunt do ut est exercitation reprehenderit magna sit laboris est mollit.'
+    },
+    {
+      company: 'University',
+      position: 'Tutor',
+      employmentFrom: '2015',
+      employmentTo: '2017',
+      description: 'Enim elit aliquip fugiat anim proident.'
+    }
+  ],
+
+  educationBlocks: [
+    {
+      course: 'CS50: Introduction to Computer Science', 
+      university: 'Harvard University',
+      startDate: '2020',
+      endDate: 'Present',
+      description: 'Nullam inceptos sociosqu congue commodo consectetur integer vivamus amet sagittis',
+    },
+    {
+      course: 'Fullstack JavaScript', 
+      university: 'The Odin Project',
+      startDate: '2019',
+      endDate: 'Present',
+      description: 'Fames gravida a vivamus augue facilisi dictum varius feugiat nibh natoque sit commodo',
+    }
   ]
 }
 

@@ -17,39 +17,39 @@ state = {
   // employmentFrom: '2018',
 }
 
-updateName = () => {
+updateName = (e) => {
   this.setState({
-    name: document.querySelector('#name').value,
+    name: e.target.value,
   })
 }
 
-updateJob = () => {
+updateJob = (e) => {
   this.setState({
-    job: document.querySelector('#job').value,
+    job: e.target.value,
   })
 }
 
-updateTelefon = () => {
+updateTelefon = (e) => {
   this.setState({
-    telefon: document.querySelector('#telefon').value,
+    telefon: e.target.value,
   })
 }
 
-updateEmail = () => {
+updateEmail = (e) => {
   this.setState({
-    email: document.querySelector('#email').value,
+    email: e.target.value,
   })
 }
 
-updateLocation = () => {
+updateLocation = (e) => {
   this.setState({
-    location: document.querySelector('#location').value,
+    location: e.target.value,
   })
 }
 
-updateDescription = () => {
+updateDescription = (e) => {
   this.setState({
-    description: document.querySelector('#description').value,
+    description: e.target.value,
   })
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
-import BlockTitle from "./BlockTitle";
+import BlocksTitle from "./BlocksTitle";
 import InputField from "./InputField";
-import EducationBlock from "./EducationBlock";
-import ExperienceBlock from "./ExperienceBlock";
+import EducationBlocks from "./EducationBlocks";
+import ExperienceBlocks from "./ExperienceBlocks";
 import TextareaField from "./TextareaField";
 
 class CVEdit extends React.Component {
@@ -10,7 +10,7 @@ class CVEdit extends React.Component {
       console.log(this.props.experienceBlocks[0].company);
         return (
           <form className="CV-Edit">
-            <BlockTitle content="Personal Details" />
+            <BlocksTitle content="Personal Details" />
             <div className="input-block">
               <InputField
                 name="name"
@@ -49,10 +49,10 @@ class CVEdit extends React.Component {
                 handleUpdate={this.props.handleInputChange}
               />
             </div>
-            <BlockTitle content="Work Experience" />
-            <ExperienceBlock data={this.props.experienceBlocks}/>
-            <BlockTitle content="Education" />
-            <EducationBlock />
+            <BlocksTitle content="Work Experience" />
+            <ExperienceBlocks data={this.props.experienceBlocks}/>
+            <BlocksTitle content="Education" />
+            <EducationBlocks />
           </form>
         );
     }

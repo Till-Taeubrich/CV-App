@@ -1,7 +1,7 @@
 import React from "react";
 import InputField from "./InputField";
 
-class ExperienceBlock extends React.Component {
+class ExperienceBlocks extends React.Component {
 
   
   render() {
@@ -18,4 +18,4 @@ class ExperienceBlock extends React.Component {
   }
 }
 
-export default ExperienceBlock;
+export default ExperienceBlocks;

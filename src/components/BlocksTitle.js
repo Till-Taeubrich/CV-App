@@ -1,6 +1,6 @@
 import React from "react";
 
-class BlockTitle extends React.Component {
+class BlocksTitle extends React.Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class BlockTitle extends React.Component {
     }
 }
 
-export default BlockTitle;
+export default BlocksTitle;

@@ -1,7 +1,7 @@
 import React from "react";
 import InputField from "./InputField";
 
-class EducationBlock extends React.Component {
+class EducationBlocks extends React.Component {
   render() {
     return (
        <div className="input-block">
@@ -15,4 +15,4 @@ class EducationBlock extends React.Component {
   }
 }
 
-export default EducationBlock;
+export default EducationBlocks;

@@ -1,7 +1,8 @@
 import React from "react";
 import BlockTitle from "./BlockTitle";
 import InputField from "./InputField";
-import InputBlock from './InputBlock';
+import EducationBlock from "./EducationBlock";
+import ExperienceBlock from "./ExperienceBlock";
 
 class CVEdit extends React.Component {
     render() {
@@ -47,9 +48,9 @@ class CVEdit extends React.Component {
               />
             </div>
             <BlockTitle content="Education" />
-            <InputBlock />
+            <EducationBlock/>
             <BlockTitle content="Work Experience" />
-            <InputBlock />
+            <ExperienceBlock />
           </form>
         );
     }
